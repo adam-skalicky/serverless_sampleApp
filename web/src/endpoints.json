@@ -1,0 +1,5 @@
+{
+ "version": {
+  "GET": "https://f5qm6b206a.execute-api.us-east-1.amazonaws.com/master/services/devTools/version/version"
+ }
+}
