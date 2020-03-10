@@ -16,12 +16,11 @@ serverlessDeploy () {
             region="us-east-1" 
             echo "Region not defined, defaulting to $region "
         fi #if no region is passed, default to us-east-1
-    sls deploy -v --stage "$env" --region "$region"
+    sls deploy -v --stage "$env" --region "$region" --nos3sync
     sls exportEndpoints -v --stage "$env" --region "$region"
-    sls s3sync -v --stage "$env" --region "$region"
 }
 
-buildReact () {
+reactDeploy () {
     if [ ! -f "build.sh" ]; then #Checks to that build.sh exists in same directory indicating user.
         echo "Not executing from root of directory, exiting."
         exit 0
@@ -30,6 +29,7 @@ buildReact () {
     npm install
     npm run build
     cd ../
+    sls s3sync -v --stage "$env" --region "$region"
 }
 
 installDeps () {
@@ -80,8 +80,8 @@ while test $# -gt 0; do
       echo "Building full solution in with defaults"
         checkDependencies
         installDeps
-        buildReact
         serverlessDeploy
+        reactDeploy
       break
       ;;
   esac
