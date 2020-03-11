@@ -122,7 +122,14 @@ functions:
     handler: services/version.version
     events:
       - http:
-          path: /services/devTools/version/version
+          path: /services/version
+          method: get
+          cors: true
+  returnTableContents:
+    handler: services/returnTableContents.returnTableContents
+    events:
+      - http:
+          path: /services/returnTableContents
           method: get
           cors: true
 # Package exclude to ensure UI not deployed to Lambda, prevents hitting package size limit error

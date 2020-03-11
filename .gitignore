@@ -4,3 +4,4 @@ web/node_modules
 web/package-lock.json
 package-lock.json
 .serverless
+web/src/endpoints.json

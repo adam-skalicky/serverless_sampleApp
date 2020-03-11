@@ -68,22 +68,7 @@ checkDependencies () {
 }
 
 
-while test $# -gt 0; do
-  case "$1" in
-    -h|--help)
-      echo "options:"
-      echo "-h, --help                show brief help"
-      echo "-d, --defaults            build with environment name defined by current branch and us-east-1 region. Builds full solution (web and services)."
-      exit 0
-      ;;
-    -d|--defaults)
-      echo "Building full solution in with defaults"
-        checkDependencies
-        installDeps
-        serverlessDeploy
-        reactDeploy
-      break
-      ;;
-  esac
-done
-
+checkDependencies
+installDeps
+serverlessDeploy
+reactDeploy
