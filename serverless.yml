@@ -24,6 +24,7 @@ provider:
         - "dynamodb:PutItem"
         - "dynamodb:GetItem"
         - "dynamodb:Scan"
+        - "dynamodb:DeleteItem"
 custom:
   s3Bucket: ${opt:stage}-${opt:region}-sampleapp
   autoscaling:
@@ -130,6 +131,22 @@ functions:
     events:
       - http:
           path: /services/returnTableContents
+          method: get
+          cors: true
+  addRecord:
+    handler: services/addRecord.addRecord
+    events:
+      - http:
+          path: /services/addRecord
+          method: post
+          cors: true
+  purgeRecords:
+    handler: services/purgeRecords.purgeRecords
+    memorySize: 256 #Override from default due to large Dynamo items.
+    timeout: 30
+    events:
+      - http:
+          path: /services/purgeRecords
           method: get
           cors: true
 # Package exclude to ensure UI not deployed to Lambda, prevents hitting package size limit error

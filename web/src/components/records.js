@@ -5,12 +5,14 @@ const Records = ({ records }) => {
   return (
       <div className="records">
       <table className="recordsTable">
-        <th>Name</th>
-        <th>ID</th>
+        <th>recordID</th>
+        <th>recordName</th>
+        <th>recordDate</th>
       {records.map((record) => (
             <tr class="record">
-                <td class="record-name">{record.name}</td>
-                <td class="record-ID">{record.recordID}</td>
+                <td class="recordID">{record.recordID}</td>
+                <td class="recordName">{record.name}</td>
+                <td class="recordDate">{record.date}</td>
             </tr>
           ))}
       </table>

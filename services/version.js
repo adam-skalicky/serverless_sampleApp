@@ -1,8 +1,8 @@
 const packageJSON = require('../package.json');
-const uuidv4 = require('uuid/v4');
+const uuidv4 = require("uuid/v4");
 
 module.exports.version = async (event) => {
-  const guid = uuidv4();
+  var guid = uuidv4();
   return {
     statusCode: 200,
     headers: {
