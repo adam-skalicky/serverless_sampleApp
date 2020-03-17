@@ -1,16 +1,18 @@
-   // src/App.js
-
    import React, {Component} from 'react';
    import Version from './components/version';
    import Records from './components/records';
-
+   import AddName from './components/addName';
+   import Purge from './components/purge';
+   import logo from './logo.svg';
    import Endpoints from './endpoints.json'
    import './App.css';
+
    class App extends Component {
     state = {
       version: {},
       records: []
     }
+
     componentDidMount() {
       fetch(Endpoints.version.GET)
       .then(res => res.json())
@@ -28,8 +30,15 @@
      render () {
        return (
         <React.Fragment>
-          <Records records={this.state.records} />
+          <div className="App-logo">
+          <img src={logo} className="App-logo" alt="logo" />
+          </div>
           <Version version={this.state.version} />
+          <AddName />
+          <Purge />
+          <Records records={this.state.records} />
+          
+          
         </React.Fragment>
        );
      }

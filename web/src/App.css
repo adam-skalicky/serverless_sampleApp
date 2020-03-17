@@ -25,7 +25,26 @@
   align-items: center;
 
 }
-.recordsTable {
+.nameSubmission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.td, th {
+  vertical-align: middle;
+  border-color: inherit;
   border: 1px solid black;
-  padding: 15px;
+
+}
+.tr:hover {
+  vertical-align: middle;
+  border-color: inherit;
+  background-color: lightgray;
+}
+
+.App-logo {
+  height: 40vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
