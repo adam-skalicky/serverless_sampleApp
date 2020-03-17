@@ -1,6 +1,6 @@
 {
   "name": "serverless_sampleapp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple AWS app using serverless with both a static react front end (served through S3 and Cloudfront) and a backend (servered by Lambda, DyanmoDB and API Gateway).",
   "main": "index.js",
   "scripts": {
