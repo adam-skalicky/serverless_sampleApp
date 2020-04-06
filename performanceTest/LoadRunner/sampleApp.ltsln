@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+# SharpDevelop 4.1.3.0-trunk
+Project("1200AAD8-6CDA-4DE1-B6D8-D194DF83D840") = "uiTest -- Read Only", "uiTest -- Read Only\uiTest -- Read Only.usr", "1200AAD8-6CDA-4DE1-B6D8-D194DF83D840"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkM6XFVzZXJzXGFkYW1cRGVza3RvcFxzZXJ2ZXJsZXNzX3NhbXBsZUFwcFxwZXJmb3JtYW5jZVRlc3RcTG9hZFJ1bm5lclx1aVRlc3QgLS0gUmVhZCBPbmx5XHVpVGVzdCAtLSBSZWFkIE9ubHkudXNyPC9Mb2FkRGF0YT4NCiAgPEZpbGVzPg0KICAgIDxGaWxlPnVpVGVzdCAtLSBSZWFkIE9ubHkudXNyPC9GaWxlPg0KICA8L0ZpbGVzPg0KICA8TW9kaWZpZWQ+MjAyMC0wNC0wNVQxNzo0NDozNS40OTgxNjgtMDc6MDA8L01vZGlmaWVkPg0KPC9QZXJzaXN0ZW5jZVRva2VuPg__
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = True
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		1200AAD8-6CDA-4DE1-B6D8-D194DF83D840.Debug|Any CPU.Build.0 = Debug|Any CPU
+		1200AAD8-6CDA-4DE1-B6D8-D194DF83D840.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		1200AAD8-6CDA-4DE1-B6D8-D194DF83D840.Release|Any CPU.Build.0 = Release|Any CPU
+		1200AAD8-6CDA-4DE1-B6D8-D194DF83D840.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

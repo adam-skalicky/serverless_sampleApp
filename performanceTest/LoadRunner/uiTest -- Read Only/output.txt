@@ -1,0 +1,57 @@
+Virtual User Script started at: 2020-04-05 17:51:48
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2020.0.0 for Windows 10; build 793 (Nov 27 2019 19:51:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\adam\Desktop\serverless_sampleApp\performanceTest\LoadRunner\uiTest -- Read Only\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action UI.
+UI.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+UI.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+UI.c(6): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+UI.c(6): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+UI.c(9): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+UI.c(9): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+UI.c(12): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+UI.c(12): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+UI.c(15): web_add_auto_header("DNT") started  	[MsgId: MMSG-26355]
+UI.c(15): web_add_auto_header("DNT") was successful  	[MsgId: MMSG-26392]
+UI.c(18): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+UI.c(18): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+UI.c(21): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+UI.c(21): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+UI.c(24): web_url("d2619n0lrdp3qq.cloudfront.net") started  	[MsgId: MMSG-26355]
+UI.c(24): Found resource "https://d2619n0lrdp3qq.cloudfront.net/bootstrap.min.css" in HTML "https://d2619n0lrdp3qq.cloudfront.net/"  	[MsgId: MMSG-26659]
+UI.c(24): Found resource "https://d2619n0lrdp3qq.cloudfront.net/static/css/main.e041e0f3.chunk.css" in HTML "https://d2619n0lrdp3qq.cloudfront.net/"  	[MsgId: MMSG-26659]
+UI.c(24): Found resource "https://d2619n0lrdp3qq.cloudfront.net/static/js/2.94969f6a.chunk.js" in HTML "https://d2619n0lrdp3qq.cloudfront.net/"  	[MsgId: MMSG-26659]
+UI.c(24): Found resource "https://d2619n0lrdp3qq.cloudfront.net/static/js/main.4780b236.chunk.js" in HTML "https://d2619n0lrdp3qq.cloudfront.net/"  	[MsgId: MMSG-26659]
+UI.c(24): Downloading resource "https://d2619n0lrdp3qq.cloudfront.net/static/media/logo.5d5d9eef.svg" (specified by argument number 11)  	[MsgId: MMSG-26577]
+UI.c(24): web_url("d2619n0lrdp3qq.cloudfront.net") was successful, 309330 body bytes, 2644 header bytes  	[MsgId: MMSG-26386]
+UI.c(36): web_add_auto_header("Origin") started  	[MsgId: MMSG-26355]
+UI.c(36): web_add_auto_header("Origin") was successful  	[MsgId: MMSG-26392]
+UI.c(39): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+UI.c(39): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+UI.c(42): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+UI.c(42): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+UI.c(45): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+UI.c(45): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+UI.c(48): web_websocket_send started  	[MsgId: MMSG-26355]
+UI.c(48): Warning -35046: The WebSocket whose ID is "0" is not connected  	[MsgId: MWAR-35046]
+UI.c(48): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Ending action UI.
+Starting action version.
+version.c(3): web_url("version") started  	[MsgId: MMSG-26355]
+version.c(3): web_url("version") was successful, 116 body bytes, 547 header bytes  	[MsgId: MMSG-26386]
+Ending action version.
+Starting action returnTable.
+returnTable.c(3): web_url("returnTableContents") started  	[MsgId: MMSG-26355]
+returnTable.c(3): web_url("returnTableContents") was successful, 2 body bytes, 545 header bytes  	[MsgId: MMSG-26386]
+Ending action returnTable.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

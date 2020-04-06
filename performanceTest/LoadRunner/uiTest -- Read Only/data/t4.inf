@@ -1,0 +1,11 @@
+[t4]
+FileName1=t4_returnTableContents.json
+URL1=https://tecigcc8s5.execute-api.us-east-2.amazonaws.com/master/services/returnTableContents
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_3.xml
+RequestHeaderFile=t4_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t4_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

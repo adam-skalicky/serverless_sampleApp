@@ -1,0 +1,23 @@
+function resetClock(){
+   document.body.style.cursor = 'default';
+}
+
+function copyCommand(bacBaseUrl,siteScopeProfileID,nodeId){
+    var iframecopy = document.getElementById('copyPasteIFrame');
+    if(bacBaseUrl.charAt(bacBaseUrl.length-1)=='/') {
+    	iframecopy.src = bacBaseUrl + 'samadmin/CopyAction.do?siteScopeProfileId='+siteScopeProfileID+'&copyObjectId='+nodeId;
+    } else {
+    	iframecopy.src = bacBaseUrl + '/samadmin/CopyAction.do?siteScopeProfileId='+siteScopeProfileID+'&copyObjectId='+nodeId;
+    }
+}
+
+function pasteCommand(bacBaseUrl,siteScopeProfileID,nodeId){
+    var iframecopy = document.getElementById('copyPasteIFrame');
+    if(bacBaseUrl.charAt(bacBaseUrl.length-1)=='/') {
+    	iframecopy.src = bacBaseUrl + 'samadmin/PasteAction.do?targetProfileId='+siteScopeProfileID+'&targetObjectId='+nodeId;
+    } else {
+    	iframecopy.src = bacBaseUrl + '/samadmin/PasteAction.do?targetProfileId='+siteScopeProfileID+'&targetObjectId='+nodeId;
+    }
+}
+
+

@@ -1,0 +1,31 @@
+
+    var popupWindow = null;
+    function openPopupWindow(url, windowName, resizable,  height, width, menubar, left, top, scrollbars,location ) {
+    	    	
+    	var sWinOptions = "resizable=" + resizable + ",height=" + height + ",width=" + width +  ",menubar=" + menubar + ",left=" + left + ",top=" + top + ",scrollbars=" + scrollbars;
+    	
+    	if(location!=undefined){
+    		sWinOptions+=",location="+location;
+    	}
+    	popupWindow = window.open(url, windowName, sWinOptions);
+     	popupWindow.focus();
+	}
+	
+	
+	function openPopupWindowDefault(url, windowName) {
+	    openPopupWindow(url, windowName, 'yes', 600, 780, 'no', 50, 50, 'yes');
+    }
+	
+	function openPopupWindowFullSize(url, windowName, resizable, menubar,scrollbars){
+		
+		openPopupWindow(url, windowName, resizable,  screen.availHeight, screen.availWidth, 0, 0, 0, scrollbars,'yes');
+     	
+		if(getBrowserName()!="Firefox"){
+		popupWindow.resizeTo(screen.availWidth, screen.availHeight);
+		}
+	}
+	
+	function openAndClosePopupWindow(url, windowName) {
+		openPopupWindow(url, windowName, 'yes', 60, 60, 'no', 50, 50, 'yes');
+		popupWindow.close();
+	}

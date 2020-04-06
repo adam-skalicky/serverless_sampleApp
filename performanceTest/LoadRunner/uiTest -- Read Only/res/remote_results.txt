@@ -1,0 +1,2 @@
+[Hosts]
+localhost=C:\Users\adam\Documents\VuGen\Scripts\uiTest\res\localhost_1.eve

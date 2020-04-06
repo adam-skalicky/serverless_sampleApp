@@ -1,0 +1,25 @@
+if(typeof(openHelpWindow) == 'undefined') {
+	
+	var helpWindow = null;
+    function openHelpWindow(url) {
+    	var sWinOptions = "resizable=yes,height=600,width=780,menubar=no,left=50,top=50";
+       	if(helpWindow == null) {
+        	helpWindow = window.open(url, "TopazHelp", sWinOptions);
+		} else {
+	    	try {
+	        	helpWindow.location = url;
+	            helpWindow.focus();
+			} catch(e) {
+	        	helpWindow = window.open(url, "TopazHelp", sWinOptions);
+			}
+		}
+	}
+}
+
+if(typeof(setURLtoFramework) == 'undefined') {
+	function setURLtoFramework(url) {
+    	if(typeof(getTop().applicationsFramework) != 'undefined') {
+    		getTop().applicationsFramework.setHelpOnPageURL(url);
+     	}
+	}
+}

@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\adam\Desktop\serverless_sampleApp\performanceTest\LoadRunner\uiTest -- Read Only
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\adam\desktop\serverless_sampleapp\performancetest\loadrunner\uitest -- read only\\logfile.log
+c:\users\adam\desktop\serverless_sampleapp\performancetest\loadrunner\uitest -- read only\\combined_uiTest -- Read Only.c
+c:\users\adam\desktop\serverless_sampleapp\performancetest\loadrunner\uitest -- read only\\pre_cci.c

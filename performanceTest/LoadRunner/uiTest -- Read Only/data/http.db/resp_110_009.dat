@@ -1,0 +1,44 @@
+if(typeof(openReportWindow) == 'undefined') {
+	
+	var reportWindow = null;
+    function openReportWindow(url) {
+    	//Function has been changed due to differences in behavior between IE & Firefox.
+    	var sWinOptions = "resizable=yes,height=600,width=780,menubar=no,left=50,top=50,scrollbars=yes";
+       	reportWindow = window.open(url, "SiteScopeReports", sWinOptions);
+		reportWindow.focus();
+	}
+}
+
+if(typeof(__targetURL) == 'undefined') {
+	var  __targetURL= "";//used in dialogStart.jsp scripts
+}
+
+//This is taken from legacy code to open this kind of popup with a "please wait" sand clock
+function actOpenDialogEx (url, modalP, openP, scroll, title, modal, resourceName) {
+     __targetURL = url;
+     var ret;
+     if(resourceName == null || resourceName.length == 0) {
+         resourceName = "";
+     }
+     var dialogUrl = '/SiteScope/jsps/act/ui/components/dialog/dialogStart.jsp?title=' + title + '&scroll='+scroll + '&resourceName=' + resourceName;
+     if (is.ie){
+         if (modal == "false") {
+             // Using window.open to not open a modal dialog
+             ret = self.open(dialogUrl,'_blank',openP);
+         } else {
+             // opening a modal dialog
+             try {
+              ret = this.showModalDialog(dialogUrl,self,modalP);
+             } catch(err){
+              // Access Denied IE error --> could indicate an active popup blocker
+              //if (err.number == -2147024891){
+				alert ("Failure opening pop-up window. Please make sure pop-up blockers are disabled.");
+              //}
+             }
+         }
+     } else {
+         ret = self.open(dialogUrl,'_blank',openP);
+     }
+     return ret;
+}
+ 
