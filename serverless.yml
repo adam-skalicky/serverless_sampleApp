@@ -34,11 +34,11 @@ custom:
   autoscaling:
     - table: sampleAppTable  # DynamoDB Resource
       read:
-        minimum: 1        # Minimum read capacity
+        minimum: 5        # Minimum read capacity
         maximum: 20       # Maximum read capacity
         targetUsage: 50        # Targeted usage percentage
       write:
-        minimum: 1        # Minimum write capacity
+        minimum: 5        # Minimum write capacity
         maximum: 20       # Maximum write capacity
         targetUsage: 50        # Targeted usage percentage  
   s3Sync:
