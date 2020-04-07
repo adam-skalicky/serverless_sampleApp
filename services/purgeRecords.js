@@ -29,6 +29,14 @@ module.exports.purgeRecords = async () => {
 	const endTime = Date.now(); // Epoch in MS
 	const executionTimeMS = endTime - startTime;
 	const response = JSON.stringify({ executionTimeMS, deletedRecordCount });
-	return { statusCode: 200, body: response };
+	console.log({response})
+	return {             
+		headers: {
+		'Access-Control-Allow-Origin': '*',
+		'Access-Control-Allow-Credentials': true,
+	  },
+	  statusCode: 200, 
+	  body: response 
+	};
 
 };

@@ -25,6 +25,10 @@ provider:
         - "dynamodb:GetItem"
         - "dynamodb:Scan"
         - "dynamodb:DeleteItem"
+    - Effect: "Allow"
+      Resource: arn:aws:sns:${opt:region}:#{AWS::AccountId}:${opt:stage}-sampleApp
+      Action:
+        - "SNS:Publish"
 custom:
   s3Bucket: ${opt:stage}-${opt:region}-sampleapp
   autoscaling:
@@ -76,7 +80,7 @@ resources:
       Properties:
         DistributionConfig:
           Origins:
-            - DomainName:  ${self:custom.s3Bucket}.s3-website-${opt:region}.amazonaws.com
+            - DomainName:  ${self:custom.s3Bucket}.s3-website.${opt:region}.amazonaws.com
               Id: WebApp
               CustomOriginConfig:
                 HTTPPort: 80
@@ -149,6 +153,22 @@ functions:
           path: /services/purgeRecords
           method: get
           cors: true
+  queueRecordPurge:
+    handler: services/queueRecordPurge.queueRecordPurge
+    memorySize: 256 #Override from default due to large Dynamo items.
+    timeout: 30
+    events:
+      - http:
+          path: /services/queuePurgeRecords
+          method: get
+          cors: true
+  purgeRecordsJob:
+    handler: services/purgeRecords.purgeRecords
+    memorySize: 512 #Override from default due to large Dynamo items.
+    timeout: 600
+    events:
+    - sns: ${opt:stage}-sampleApp
+
 # Package exclude to ensure UI not deployed to Lambda, prevents hitting package size limit error
 package:
   exclude:

@@ -3,6 +3,7 @@
    import Records from './components/records';
    import AddName from './components/addName';
    import Purge from './components/purge';
+   import QueuePurge from './components/queuePurge';
    import logo from './logo.svg';
    import Endpoints from './endpoints.json'
    import './App.css';
@@ -36,6 +37,7 @@
           <Version version={this.state.version} />
           <AddName />
           <Purge />
+          <QueuePurge />
           <Records records={this.state.records} />
           
           

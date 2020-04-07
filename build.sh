@@ -1,21 +1,23 @@
 #/bin/bash
-starttime=$(date +%s)
 
 
-serverlessDeploy () {
-    presentBranch=$(git branch | grep \* | cut -d ' ' -f2)
+setVariables() {
+    starttime=$(date +%s)
     env=$1
     region=$2
+    presentBranch=$(git branch | grep \* | cut -d ' ' -f2)
     if [ -z $env ]; 
-        echo "Environment not defined, defaulting to $presentBranch "
         then 
+         echo "Environment not defined, defaulting to $presentBranch "
          env=$presentBranch 
         fi  #if no env is defined, use branch name
     if [ -z $region ]; 
         then 
-            region="us-east-1" 
             echo "Region not defined, defaulting to $region "
-        fi #if no region is passed, default to us-east-1
+            region="us-east-2" 
+        fi #if no region is passed, default to us-east-2
+}
+serverlessDeploy () {
     sls deploy -v --stage "$env" --region "$region" --nos3sync
     sls exportEndpoints -v --stage "$env" --region "$region"
 }
@@ -69,6 +71,7 @@ checkDependencies () {
 
 
 checkDependencies
+setVariables $1 $2
 installDeps
 serverlessDeploy
 reactDeploy
