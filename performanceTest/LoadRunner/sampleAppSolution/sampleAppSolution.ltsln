@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+# SharpDevelop 4.1.3.0-trunk
+Project("3E9EDFBA-28A2-42AA-84C0-33BBCC9353F8") = "sampleApp", "sampleApp\sampleApp.usr", "3E9EDFBA-28A2-42AA-84C0-33BBCC9353F8"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkM6XFVzZXJzXGFkYW1cRGVza3RvcFxzZXJ2ZXJsZXNzX3NhbXBsZUFwcFxwZXJmb3JtYW5jZVRlc3RcTG9hZFJ1bm5lclxzYW1wbGVBcHBTb2x1dGlvblxzYW1wbGVBcHBcc2FtcGxlQXBwLnVzcjwvTG9hZERhdGE+DQogIDxGaWxlcz4NCiAgICA8RmlsZT5DOlxVc2Vyc1xhZGFtXERlc2t0b3Bcc2VydmVybGVzc19zYW1wbGVBcHBccGVyZm9ybWFuY2VUZXN0XExvYWRSdW5uZXJcc2FtcGxlQXBwU29sdXRpb25cc2FtcGxlQXBwXHNhbXBsZUFwcC51c3I8L0ZpbGU+DQogIDwvRmlsZXM+DQogIDxNb2RpZmllZD4yMDIwLTA0LTA2VDIyOjM1OjA0LjA1MTEwMTItMDc6MDA8L01vZGlmaWVkPg0KPC9QZXJzaXN0ZW5jZVRva2VuPg__
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = True
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		3E9EDFBA-28A2-42AA-84C0-33BBCC9353F8.Debug|Any CPU.Build.0 = Debug|Any CPU
+		3E9EDFBA-28A2-42AA-84C0-33BBCC9353F8.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		3E9EDFBA-28A2-42AA-84C0-33BBCC9353F8.Release|Any CPU.Build.0 = Release|Any CPU
+		3E9EDFBA-28A2-42AA-84C0-33BBCC9353F8.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
