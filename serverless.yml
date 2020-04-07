@@ -137,6 +137,13 @@ functions:
           path: /services/returnTableContents
           method: get
           cors: true
+  returnTableContents:
+    handler: services/returnAllTableContents.returnAllTableContents
+    events:
+      - http:
+          path: /services/returnAllTableContents
+          method: get
+          cors: true
   addRecord:
     handler: services/addRecord.addRecord
     events:
