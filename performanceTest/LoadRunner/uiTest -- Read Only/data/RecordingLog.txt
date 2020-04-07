@@ -1,7 +1,0 @@
-[Network Analyzer (1a64: 2b4)]   (Sid: 76) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-ECDSA-AES128-GCM-SHA256)
-[Network Analyzer (1a64:2730)]   (Sid: 16) Server -> Client : 407 bytes (SSL)
-[Net An. Error    (1a64: 2b4)] SSLAccept(ssl_id = 2222692949952 = 0000020582D2DFC0) Failed, ctx = 00000205821495E0, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
-error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
-" 
-[Net An. Error    (1a64: 2b4)]   (Sid: 76) Negotiate Client -> Proxy SSL Handshake Failed!!!
-[Network Analyzer (1a64:2730)]   (Sid: 76) Connection Terminated (by Client)
