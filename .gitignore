@@ -5,3 +5,17 @@ web/package-lock.json
 package-lock.json
 .serverless
 web/src/endpoints.json
+
+*.sdf
+combined_*.c
+ThumbnailsCache.tmp
+*.bak
+pre_cci.c
+*.ci
+*.idx
+*.c.pickle
+mdrv_cmd.txt
+options.txt
+performanceTest/LoadRunner/sampleAppSolution/*/res*/
+*.log
+performanceTest/LoadRunner/sampleAppSolution/*/output.txt
