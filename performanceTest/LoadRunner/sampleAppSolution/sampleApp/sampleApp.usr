@@ -71,8 +71,8 @@ Order=
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
-LastReplayedRunName=result2
-ActiveRunName=result2
+LastReplayedRunName=result1
+ActiveRunName=result1
 [ImportedAction]
 UI=
 version=
