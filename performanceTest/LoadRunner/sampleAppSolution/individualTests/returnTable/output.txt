@@ -1,0 +1,19 @@
+Virtual User Script started at: 2020-04-12 07:15:49
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2020.0.0 for Windows 10; build 793 (Nov 27 2019 19:51:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\adam\Desktop\serverless_sampleApp\performanceTest\LoadRunner\sampleAppSolution\individualTests\returnTable\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action returnTable.
+returnTable.c(3): web_url("returnTableContents") started  	[MsgId: MMSG-26355]
+returnTable.c(3): web_url("returnTableContents") was successful, 27513 body bytes, 549 header bytes  	[MsgId: MMSG-26386]
+Ending action returnTable.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

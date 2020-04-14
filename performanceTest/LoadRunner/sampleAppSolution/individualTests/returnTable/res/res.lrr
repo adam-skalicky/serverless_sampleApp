@@ -1,0 +1,46 @@
+[Scenario]
+Product=LoadRunner Controller
+Version=2020.0.0.0
+Path=C:\Program Files (x86)\Jenkins\workspace\sampleApp -- LoadRunner\performanceTest\LoadRunner\sampleAppSolution\5Users.lrs
+Subject=5Users
+Result_file=C:\Users\adam\Desktop\serverless_sampleApp\performanceTest\LoadRunner\sampleAppSolution\sampleApp\res\res.lrr
+Description=
+ResultName=res
+Time_Zone=28800
+Start_time=1586595932
+Daylight_Bias=-60
+Stop_time=1586596059
+[Configuration]
+Public_local=1
+Is_mix=1
+Is_runner_file=0
+Runner_file=
+[Running_mode]
+Start_reason=By a user
+Stop_reason=By command
+[Data Collection]
+FullData=1
+[Scenario_summary]
+Scenario Type=Goal-Oriented Scenario
+Goal Profile Name=
+Goal=20 Virtual Users
+Scenario Duration=000:03:00 (hhh:mm:ss) after the target has been achieved
+Load Behavior=Reach target virtual users after 00:00:01 (hh:mm:ss)
+Global Schedule=
+[Scenario Policy]
+Scheduler Name=Default Schedule
+SCHED_INIT_DURATION_TYPE=0
+SCHED_DURATION_TYPE=1
+SCHED_DURATION=180
+SCHED_RAMP_UP_MODE=1
+SCHED_INIT_RAMP_UP_MODE=0
+SCHED_TARGET_NUM=20.00
+SCHED_VUSERS_MIN_NUM=20
+SCHED_VUSERS_MAX_NUM=60
+SCHED_SCENARIO_TARGET=0
+SCHED_GOAL_RAMP_UP_DUR=1
+GOAL_NOT_REACHED_BEHAVIOR=1
+[Scripts]
+sampleApp=C:\Users\adam\Desktop\serverless_sampleApp\performanceTest\LoadRunner\sampleAppSolution\sampleApp\sampleApp.usr
+[Scripts_types]
+sampleApp=Multi+QTWeb

@@ -1,0 +1,26 @@
+[t4]
+FileName2=t1_5_2.html
+RawStepEndTime=1586281426050
+FileName5=t1_2_bootstrap.css
+FileName4=t1_3_main.css
+FileName7=t1_0_logo.UNK
+FileName6=t1_1_main.UNK
+RequestBodyFile=t4_RequestBody.txt
+RawStepName=addRecord
+ContentType=application/json
+URL1=https://5y0r4sf162.execute-api.us-east-2.amazonaws.com/perf-test/services/addRecord
+URL2=https://d347c3fnjd215r.cloudfront.net/static/js/2.94969f6a.chunk.js
+URL3=https://d347c3fnjd215r.cloudfront.net/static/js/2.ec64976b.chunk.js
+ResponseHeaderFile=t4_ResponseHeader.txt
+URL4=https://d347c3fnjd215r.cloudfront.net/static/css/main.e041e0f3.chunk.css
+URL5=https://d347c3fnjd215r.cloudfront.net/bootstrap.min.css
+URL6=https://d347c3fnjd215r.cloudfront.net/static/js/main.deffca5d.chunk.js
+URL7=https://d347c3fnjd215r.cloudfront.net/static/media/logo.5d5d9eef.svg
+SnapshotXmlFile=snapshot_4.xml
+RequestHeaderFile=t4_RequestHeader.txt
+SaveSnapshotResources=1
+RawStepStartTime=1586281425743
+Total=7
+StepName=Custom Request: addRecord
+FileName1=t4.json
+FileName3=t1_4_2.UNK

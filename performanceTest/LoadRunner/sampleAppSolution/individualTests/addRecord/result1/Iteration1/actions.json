@@ -1,0 +1,14 @@
+[
+    {
+        "actionName": "addRecord",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Custom Request: addRecord",
+                "infFile": "t1.inf",
+                "time": 1586700933700
+            }
+        ],
+        "transactions": []
+    }
+]

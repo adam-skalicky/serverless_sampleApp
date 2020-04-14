@@ -1,0 +1,2 @@
+[Hosts]
+localhost=C:\Users\adam\Desktop\serverless_sampleApp\performanceTest\LoadRunner\sampleAppSolution\sampleApp\res\localhost_2.eve

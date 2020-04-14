@@ -1,0 +1,11 @@
+execution:
+- scenario: perfTest
+  concurrency: 20
+  ramp-up: 1m
+  hold-for: 5m
+
+scenarios:
+  perfTest:
+    script: addRecord.jmx
+    script: version.jmx
+    script: returnTable.jmx

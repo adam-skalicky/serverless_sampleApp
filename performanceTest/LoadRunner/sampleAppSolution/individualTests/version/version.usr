@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=sampleApp.prm
+ParameterFile=version.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci
@@ -25,7 +25,7 @@ Description=
 ScriptLocale=en-US
 [Actions]
 vuser_init=vuser_init.c
-addRecord=addRecord.c
+version=version.c
 vuser_end=vuser_end.c
 [RunLogicFiles]
 Default Profile=default.usp
@@ -37,19 +37,19 @@ Default Profile=default.cfg
 globals.h=
 [Modified Actions]
 vuser_init=1
-addRecord=1
+version=1
 vuser_end=0
 [Recorded Actions]
 vuser_init=0
-addRecord=0
+version=0
 vuser_end=0
 [Replayed Actions]
 vuser_init=1
-addRecord=1
+version=1
 vuser_end=1
 [Interpreters]
 vuser_init=cci
-addRecord=cci
+version=cci
 vuser_end=cci
 [TransactionsOrder]
 Order=
@@ -59,4 +59,4 @@ LastReplayStatus=1
 LastReplayedRunName=result1
 ActiveRunName=result1
 [ImportedAction]
-addRecord=
+version=

@@ -1,0 +1,12 @@
+[vuser_init]
+SnapshotIndex=I1_vuser_init
+[UI]
+SnapshotIndex=I1_UI
+[addRecord]
+SnapshotIndex=I1_addRecord
+[version]
+SnapshotIndex=I1_version
+[vuser_end]
+SnapshotIndex=I1_vuser_end
+[returnTable]
+SnapshotIndex=I1_returnTable

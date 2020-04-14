@@ -1,0 +1,50 @@
+[
+    {
+        "actionName": "UI",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: {uihost}",
+                "infFile": "t1.inf",
+                "time": 1586281424943
+            }
+        ],
+        "transactions": []
+    },
+    {
+        "actionName": "version",
+        "steps": [
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: version",
+                "infFile": "t2.inf",
+                "time": 1586281425400
+            }
+        ],
+        "transactions": []
+    },
+    {
+        "actionName": "returnTable",
+        "steps": [
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: returnTableContents",
+                "infFile": "t3.inf",
+                "time": 1586281425723
+            }
+        ],
+        "transactions": []
+    },
+    {
+        "actionName": "addRecord",
+        "steps": [
+            {
+                "stepId": "STEP4",
+                "stepName": "Custom Request: addRecord",
+                "infFile": "t4.inf",
+                "time": 1586281426075
+            }
+        ],
+        "transactions": []
+    }
+]

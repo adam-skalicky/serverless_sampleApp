@@ -1,0 +1,15 @@
+HTTP/2.0 200
+Status: 200
+content-type: application/json
+content-length: 121
+date: Tue, 07 Apr 2020 17:43:45 GMT
+x-amzn-requestid: bebcd0e8-16c7-4c3e-aff6-15b0d1e89429
+access-control-allow-origin: *
+x-amz-apigw-id: KoJI0Hz9iYcFvqQ=
+x-amzn-trace-id: Root=1-5e8cbbd1-5098540faf6964f39efcd4e9;Sampled=0
+access-control-allow-credentials: true
+x-cache: Miss from cloudfront
+via: 1.1 9f81bea25ba920ede749daf13506a051.cloudfront.net (CloudFront)
+x-amz-cf-pop: HIO50-C2
+x-amz-cf-id: 3JX5oWaPOp2PQl5zvZ1vzizYOHx3SFTxChpHon9tPQya07psZftV7Q==
+

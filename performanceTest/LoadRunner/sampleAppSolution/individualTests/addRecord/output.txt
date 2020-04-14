@@ -1,0 +1,19 @@
+Virtual User Script started at: 2020-04-12 07:15:32
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2020.0.0 for Windows 10; build 793 (Nov 27 2019 19:51:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\adam\Desktop\serverless_sampleApp\performanceTest\LoadRunner\sampleAppSolution\individualTests\addRecord\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action addRecord.
+addRecord.c(4): web_custom_request("addRecord") started  	[MsgId: MMSG-26355]
+addRecord.c(4): web_custom_request("addRecord") was successful, 121 body bytes, 547 header bytes  	[MsgId: MMSG-26386]
+Ending action addRecord.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

@@ -1,0 +1,9 @@
+execution:
+- scenario: sampleApp
+  concurrency: 10
+  ramp-up: 1m
+  hold-for: 3m
+
+scenarios:
+  sampleApp:
+    script: sampleApp.jmx

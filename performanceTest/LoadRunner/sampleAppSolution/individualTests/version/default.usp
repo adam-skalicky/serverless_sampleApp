@@ -1,7 +1,7 @@
 [Profile Actions]
 MercIniTreeFather=""
 MercIniTreeSectionName="Profile Actions"
-Profile Actions name=vuser_init,addRecord,vuser_end
+Profile Actions name=vuser_init,version,vuser_end
 [RunLogicEndRoot]
 MercIniTreeFather=""
 MercIniTreeSectionName="RunLogicEndRoot"
@@ -53,16 +53,16 @@ RunLogicObjectKind="Action"
 [RunLogicRunRoot]
 MercIniTreeFather=""
 MercIniTreeSectionName="RunLogicRunRoot"
-MercIniTreeSons="addRecord"
+MercIniTreeSons="version"
 Name="Run"
-RunLogicActionOrder="addRecord"
+RunLogicActionOrder="version"
 RunLogicActionType="VuserRun"
 RunLogicNumOfIterations="1"
 RunLogicObjectKind="Group"
 RunLogicRunMode="Sequential"
-[RunLogicRunRoot:addRecord]
+[RunLogicRunRoot:version]
 MercIniTreeFather="RunLogicRunRoot"
-MercIniTreeSectionName="addRecord"
-Name="addRecord"
+MercIniTreeSectionName="version"
+Name="version"
 RunLogicActionType="VuserRun"
 RunLogicObjectKind="Action"

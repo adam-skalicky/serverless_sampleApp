@@ -1,0 +1,14 @@
+[
+    {
+        "actionName": "returnTable",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: returnTableContents",
+                "infFile": "t1.inf",
+                "time": 1586700951752
+            }
+        ],
+        "transactions": []
+    }
+]
