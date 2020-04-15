@@ -7,3 +7,10 @@ execution:
 scenarios:
   sampleApp:
     script: sampleApp.jmx
+
+
+reporting:
+- module: passfail
+  criteria:
+  - avg-rt >500ms for 10s, stop as failed
+  - fail >2% for 10s, stop as failed
